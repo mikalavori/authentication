@@ -3,9 +3,6 @@ module.exports = {
   exclude: /node_modules/,
   loader: 'babel-loader',
   options: {
-    presets: [
-      'react',
-      ['env', { modules: false }]
-    ]
+    presets: ['babel-preset-react-hmre'].map(require.resolve),
   }
 }
